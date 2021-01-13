@@ -12,3 +12,8 @@ git status
 
 git add myapp.py
 adding to the repository
+
+git add *.txt
+adding all files that ends with .txt
+
+git commit -m"Added first test"
