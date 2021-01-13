@@ -1,0 +1,14 @@
+git --version
+
+git config --global user.name "FuryDj"
+
+git config --global user.email "iamdjordjesimic@gmail.com"
+ABB12dbb!"
+
+git init
+to make a repository in current path
+
+git status
+
+git add myapp.py
+adding to the repository

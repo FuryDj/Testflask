@@ -1,0 +1,63 @@
+from PGDB import db, Publication
+pub = Publication(100, "Oxford Publications")
+db.session.add(pub)
+db.session.commit
+
+deb.session.add_all([paramount, oracle])
+
+dir(pub) show all methotds available
+
+type(pub)
+
+
+
+pub
+#Now it should print __repr__ on class Publication
+
+######
+Query Data
+Book.query.all()
+all = Book.query.all()
+type(all) = list
+
+first = Book.query.first() = first[0]
+
+IMPORTANT
+filter_data = Book.query.filter_by(format="ePub").all() thats equal SELECT title FROM TABLE WHERE format = ePub
+title is second column after id
+
+pk = Book.query.get(1) it print first title in table
+hh = Book.query.limit(5) it print first 5 rows titles from table in the list
+order_records = Book.query.order_by(Book.title).all() its print column after id that is title ordered in this case by title
+new = Book.query.filter_by(avg_raiting=4.1).order_by("num_pages").all()
+
+kk = Publication.query.filter_by(name="Broadway Press").first()
+broadway = Book.query.filter_by(pub_id=kk.id).all()
+
+
+u = Book.query.get(16) it assign all values of row id 16 on u and work ass class
+u.format
+u.title
+we can change it u.format = "Hardcover" and db.session.commit() after
+
+to delete
+db.session.delete(u) which mean db.session.delete(Book.query.get(16))
+db.session.commit()
+
+
+
+
+
+
+
+
+
+
+
+broadway = Book.query.filter_by(pub_id=Publication.query.filter_by(name="Oxford Publications").first().id).all()
+
+
+
+
+
+
