@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOME </title>
+</head>
+<body>
+    <h1>Movies to watch</h1>
+    <h2>This collection belongs to {{ name }}</h2>
+    <h3>movies: {{kurac}}</h3>
+    <h3>first: {{kurac[0]}}</h3>
+    <h3>slicing:{{kurac[1:4]}}</h3>
+    <hr>
+    <ul>
+        {% for i in kurac %}
+            <li> the movie is: {{i}} </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

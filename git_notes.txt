@@ -17,3 +17,10 @@ git add *.txt
 adding all files that ends with .txt
 
 git commit -m"Added first test"
+
+git remote add origin https://github.com/FuryDj/Testflask.git
+origin is my online repository
+with this we establish connection between local and online repository
+
+git push -u origin master
+-u mean remeber commands so next time we can type just git push
